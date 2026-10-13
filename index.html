@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A/C Heating & Cooling Tech LLC | Hidalgo, TX HVAC Services</title>
+    <meta name="description" content="Professional heating, ventilation, and air conditioning services in Hidalgo, TX. Reliable AC repair, installation, maintenance, and heating solutions.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            DEFAULT: '#0B192C',
+                            dark: '#050D17',
+                            light: '#1E3E62'
+                        },
+                        coolblue: {
+                            DEFAULT: '#008DDA',
+                            light: '#41C9E2',
+                            pale: '#ACE2G1'
+                        },
+                        accent: {
+                            DEFAULT: '#FF6500',
+                            hover: '#E55A00'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom smooth styling enhancements */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8FAFC;
+            color: #1E293B;
+        }
+        .hero-bg {
+            background: linear-gradient(rgba(11, 25, 44, 0.85), rgba(11, 25, 44, 0.75)), url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+        }
+        .cta-banner-bg {
+            background: linear-gradient(rgba(0, 141, 218, 0.92), rgba(11, 25, 44, 0.92)), url('https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+        }
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .animate-float {
+            animation: floatSlow 4s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-coolblue selection:text-white">
+
+    <!-- Top Bar -->
+    <div class="bg-navy-dark text-slate-300 text-xs sm:text-sm py-2 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-6">
+                <span><i class="fa-solid fa-location-dot text-coolblue mr-2"></i> Hidalgo, TX 78557</span>
+                <span><i class="fa-solid fa-clock text-coolblue mr-2"></i> Mon-Sat: 8:00 AM - 6:00 PM</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="mailto:acbusinesstech@gmail.com" class="hover:text-coolblue transition"><i class="fa-solid fa-envelope text-coolblue mr-1"></i> acbusinesstech@gmail.com</a>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="hover:text-coolblue transition" aria-label="Facebook Page"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Main Navigation -->
+    <header id="navbar" class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Company Logo -->
+            <a href="#home" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-coolblue to-navy flex items-center justify-center text-white text-xl shadow-md group-hover:scale-105 transition">
+                    <i class="fa-solid fa-snowflake"></i>
+                </div>
+                <div>
+                    <span class="text-lg sm:text-xl font-extrabold text-navy tracking-tight block leading-tight">A/C Heating & Cooling Tech</span>
+                    <span class="text-xs font-semibold text-coolblue tracking-widest uppercase">LLC • Hidalgo, TX</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden lg:flex items-center gap-8 font-medium text-slate-600">
+                <a href="#home" class="hover:text-coolblue transition">Home</a>
+                <a href="#about" class="hover:text-coolblue transition">About</a>
+                <a href="#services" class="hover:text-coolblue transition">Services</a>
+                <a href="#why-us" class="hover:text-coolblue transition">Why Choose Us</a>
+                <a href="#reviews" class="hover:text-coolblue transition">Reviews</a>
+                <a href="#contact" class="hover:text-coolblue transition">Contact</a>
+            </nav>
+
+            <!-- Header Action Buttons -->
+            <div class="hidden sm:flex items-center gap-4">
+                <a href="tel:9565377825" class="flex items-center gap-2 text-navy font-bold hover:text-coolblue transition">
+                    <div class="w-10 h-10 rounded-full bg-coolblue/10 flex items-center justify-center text-coolblue">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="hidden xl:block text-left">
+                        <span class="text-xs text-slate-400 block font-normal">Call Us Anytime</span>
+                        <span class="text-sm">(956) 537-7825</span>
+                    </div>
+                </a>
+                <a href="#booking" class="bg-accent hover:bg-accent-hover text-white font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-accent/25 hover:shadow-xl transition transform hover:-translate-y-0.5">
+                    Get Free Quote
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="lg:hidden text-slate-700 focus:outline-none p-2 text-2xl" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-100 px-6 py-4 space-y-3 shadow-xl">
+            <a href="#home" class="block py-2 text-slate-700 hover:text-coolblue font-medium">Home</a>
+            <a href="#about" class="block py-2 text-slate-700 hover:text-coolblue font-medium">About Us</a>
+            <a href="#services" class="block py-2 text-slate-700 hover:text-coolblue font-medium">Services</a>
+            <a href="#why-us" class="block py-2 text-slate-700 hover:text-coolblue font-medium">Why Choose Us</a>
+            <a href="#reviews" class="block py-2 text-slate-700 hover:text-coolblue font-medium">Reviews</a>
+            <a href="#contact" class="block py-2 text-slate-700 hover:text-coolblue font-medium">Contact</a>
+            <div class="pt-2 border-t border-slate-100 flex flex-col gap-3">
+                <a href="tel:9565377825" class="flex items-center justify-center gap-2 bg-slate-100 py-3 rounded-xl text-navy font-bold">
+                    <i class="fa-solid fa-phone text-coolblue"></i> (956) 537-7825
+                </a>
+                <a href="#booking" class="bg-accent text-center text-white font-semibold py-3 rounded-xl shadow-md">
+                    Get Free Quote
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero-bg min-h-[90vh] flex items-center relative text-white py-20 px-4 overflow-hidden">
+        <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+            <!-- Hero Content -->
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 text-coolblue-light text-sm font-semibold animate-pulse">
+                    <i class="fa-solid fa-shield-halved"></i> Serving Hidalgo, TX & Surrounding Areas
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                    Your Comfort Is <span class="text-coolblue-light">Our Priority.</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-200 max-w-2xl mx-auto lg:mx-0 font-normal">
+                    Reliable Heating & Air Conditioning Services in Hidalgo, TX. Keep your home or business comfortable year-round with professional heating, cooling, maintenance, and repair solutions.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                    <a href="#booking" class="w-full sm:w-auto bg-accent hover:bg-accent-hover text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-accent/30 text-center transition transform hover:-translate-y-1">
+                        <i class="fa-solid fa-calendar-check mr-2"></i> Schedule HVAC Service
+                    </a>
+                    <a href="tel:9565377825" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 font-bold px-8 py-4 rounded-xl text-center transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-phone text-coolblue"></i> Call (956) 537-7825
+                    </a>
+                </div>
+                <div class="pt-6 grid grid-cols-3 gap-4 border-t border-white/10 max-w-lg mx-auto lg:mx-0 text-center sm:text-left">
+                    <div>
+                        <span class="block text-2xl sm:text-3xl font-extrabold text-coolblue-light">Expert</span>
+                        <span class="text-xs text-slate-300">Technicians</span>
+                    </div>
+                    <div>
+                        <span class="block text-2xl sm:text-3xl font-extrabold text-coolblue-light">Fast</span>
+                        <span class="text-xs text-slate-300">Response Time</span>
+                    </div>
+                    <div>
+                        <span class="block text-2xl sm:text-3xl font-extrabold text-coolblue-light">100%</span>
+                        <span class="text-xs text-slate-300">Quality Focus</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Image / Floating Card -->
+            <div class="lg:col-span-5 relative flex justify-center">
+                <div class="relative w-full max-w-md">
+                    <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-coolblue to-accent opacity-30 blur-lg animate-pulse"></div>
+                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80" alt="HVAC Technician Servicing Unit" class="relative rounded-3xl shadow-2xl object-cover w-full h-[420px] border-4 border-white/10 animate-float">
+                    
+                    <!-- Floating Badge Card -->
+                    <div class="absolute -bottom-6 -left-6 bg-white text-navy p-4 rounded-2xl shadow-xl flex items-center gap-3 border border-slate-100">
+                        <div class="w-12 h-12 bg-coolblue/10 rounded-xl flex items-center justify-center text-coolblue text-xl">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-semibold text-slate-400 block">Professional Care</span>
+                            <span class="text-sm font-bold text-navy">Reliable AC & Heating</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- About Image Column -->
+                <div class="lg:col-span-6 relative">
+                    <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-8 border-slate-50">
+                        <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=800&q=80" alt="Heating and Cooling Professional" class="w-full h-[450px] object-cover hover:scale-105 transition duration-700">
+                    </div>
+                    <!-- Decorative element -->
+                    <div class="absolute -bottom-8 -right-8 w-64 h-64 bg-coolblue/10 rounded-full blur-3xl -z-0"></div>
+                    <div class="absolute -top-8 -left-8 w-64 h-64 bg-accent/10 rounded-full blur-3xl -z-0"></div>
+                </div>
+
+                <!-- About Content Column -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-coolblue/10 px-3.5 py-1.5 rounded-full text-coolblue font-semibold text-xs tracking-wider uppercase">
+                        <i class="fa-solid fa-house-chimney-user"></i> About Our Business
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-navy tracking-tight">
+                        Your Local Heating & Cooling Professionals
+                    </h2>
+                    <p class="text-slate-600 text-base leading-relaxed">
+                        A/C Heating & Cooling Tech LLC is a dedicated local HVAC business proudly serving Hidalgo, Texas, and surrounding communities. We understand the intense Texas heat and the importance of having a dependable indoor climate control system.
+                    </p>
+                    <p class="text-slate-600 text-base leading-relaxed">
+                        Our focus centers on professional workmanship, complete customer comfort, clear communication, and dependable heating and cooling solutions tailored to your specific residential or commercial needs.
+                    </p>
+
+                    <!-- Feature check list -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="flex items-center gap-3 bg-slate-50 p-3.5 rounded-xl border border-slate-100">
+                            <div class="w-8 h-8 rounded-lg bg-coolblue/10 flex items-center justify-center text-coolblue shrink-0">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span class="text-sm font-semibold text-navy">Professional Workmanship</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-slate-50 p-3.5 rounded-xl border border-slate-100">
+                            <div class="w-8 h-8 rounded-lg bg-coolblue/10 flex items-center justify-center text-coolblue shrink-0">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span class="text-sm font-semibold text-navy">Clear Communication</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-slate-50 p-3.5 rounded-xl border border-slate-100">
+                            <div class="w-8 h-8 rounded-lg bg-coolblue/10 flex items-center justify-center text-coolblue shrink-0">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span class="text-sm font-semibold text-navy">Customer Comfort First</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-slate-50 p-3.5 rounded-xl border border-slate-100">
+                            <div class="w-8 h-8 rounded-lg bg-coolblue/10 flex items-center justify-center text-coolblue shrink-0">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span class="text-sm font-semibold text-navy">Dependable Solutions</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <a href="#contact" class="inline-flex items-center gap-2 bg-navy hover:bg-navy-light text-white font-semibold px-6 py-3.5 rounded-xl shadow-md transition">
+                            <span>Contact Our Team</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-slate-100/70">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="bg-coolblue/10 text-coolblue px-3.5 py-1.5 rounded-full font-semibold text-xs tracking-wider uppercase">
+                    <i class="fa-solid fa-gear"></i> What We Offer
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy">Complete Heating & Cooling Solutions</h2>
+                <p class="text-slate-600 text-base">From routine seasonal tune-ups to emergency repairs and new system installations, our technicians keep your HVAC equipment running efficiently.</p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 border border-slate-100 group flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=600&q=80" alt="AC Repair" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 right-4 bg-navy text-white w-10 h-10 rounded-xl flex items-center justify-center shadow-md">
+                            <i class="fa-solid fa-screwdriver-wrench text-coolblue"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-navy mb-2">AC Repair</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">Accurate diagnosis and professional repair of air conditioning problems to restore cooling performance quickly.</p>
+                        </div>
+                        <a href="#booking" class="inline-flex items-center gap-2 text-coolblue font-semibold text-sm group-hover:text-accent transition">
+                            <span>Request Service</span>
+                            <i class="fa-solid fa-arrow-right-long transform group-hover:translate-x-1 transition"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 2: AC Installation -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 border border-slate-100 group flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1590402494682-cd3fb53b1f70?auto=format&fit=crop&w=600&q=80" alt="AC Installation" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 right-4 bg-navy text-white w-10 h-10 rounded-xl flex items-center justify-center shadow-md">
+                            <i class="fa-solid fa-snowflake text-coolblue"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-navy mb-2">AC Installation</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">Expert installation and seamless replacement of high-efficiency cooling systems for residential and commercial properties.</p>
+                        </div>
+                        <a href="#booking" class="inline-flex items-center gap-2 text-coolblue font-semibold text-sm group-hover:text-accent transition">
+                            <span>Request Service</span>
+                            <i class="fa-solid fa-arrow-right-long transform group-hover:translate-x-1 transition"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 border border-slate-100 group flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?auto=format&fit=crop&w=600&q=80" alt="AC Maintenance" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 right-4 bg-navy text-white w-10 h-10 rounded-xl flex items-center justify-center shadow-md">
+                            <i class="fa-solid fa-shield-heart text-coolblue"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-navy mb-2">AC Maintenance</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">Comprehensive preventive maintenance and seasonal system tune-ups to extend equipment lifespan and lower energy bills.</p>
+                        </div>
+                        <a href="#booking" class="inline-flex items-center gap-2 text-coolblue font-semibold text-sm group-hover:text-accent transition">
+                            <span>Request Service</span>
+                            <i class="fa-solid fa-arrow-right-long transform group-hover:translate-x-1 transition"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 4: Heating Repair -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 border border-slate-100 group flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80" alt="Heating Repair" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 right-4 bg-navy text-white w-10 h-10 rounded-xl flex items-center justify-center shadow-md">
+                            <i class="fa-solid fa-fire text-coolblue"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-navy mb-2">Heating Repair</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">Reliable heating system troubleshooting and prompt repair services to keep your indoor environment warm when needed.</p>
+                        </div>
+                        <a href="#booking" class="inline-flex items-center gap-2 text-coolblue font-semibold text-sm group-hover:text-accent transition">
+                            <span>Request Service</span>
+                            <i class="fa-solid fa-arrow-right-long transform group-hover:translate-x-1 transition"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 border border-slate-100 group flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" alt="Heating Installation" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 right-4 bg-navy text-white w-10 h-10 rounded-xl flex items-center justify-center shadow-md">
+                            <i class="fa-solid fa-house-chimney text-coolblue"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-navy mb-2">Heating Installation</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">Professional heating equipment installation and replacement designed for optimal performance and safety.</p>
+                        </div>
+                        <a href="#booking" class="inline-flex items-center gap-2 text-coolblue font-semibold text-sm group-hover:text-accent transition">
+                            <span>Request Service</span>
+                            <i class="fa-solid fa-arrow-right-long transform group-hover:translate-x-1 transition"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 border border-slate-100 group flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="HVAC System Inspections" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 right-4 bg-navy text-white w-10 h-10 rounded-xl flex items-center justify-center shadow-md">
+                            <i class="fa-solid fa-magnifying-glass-chart text-coolblue"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-navy mb-2">HVAC System Inspections</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">Detailed system performance checks and thorough assessments to identify hidden faults before they become costly breakdowns.</p>
+                        </div>
+                        <a href="#booking" class="inline-flex items-center gap-2 text-coolblue font-semibold text-sm group-hover:text-accent transition">
+                            <span>Request Service</span>
+                            <i class="fa-solid fa-arrow-right-long transform group-hover:translate-x-1 transition"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-us" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="bg-coolblue/10 text-coolblue px-3.5 py-1.5 rounded-full font-semibold text-xs tracking-wider uppercase">
+                    <i class="fa-solid fa-award"></i> The Tech Difference
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy">Comfort, Quality & Service You Can Count On</h2>
+                <p class="text-slate-600 text-base">We take pride in providing exceptional HVAC service built on honesty, technical skill, and dedication to customer satisfaction.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:border-coolblue/40 shadow-sm hover:shadow-xl transition duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-coolblue/10 flex items-center justify-center text-coolblue text-2xl mb-6 group-hover:bg-coolblue group-hover:text-white transition">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-navy mb-3">Customer-Focused Service</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Solutions tailored specifically to your comfort needs and household requirements.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:border-coolblue/40 shadow-sm hover:shadow-xl transition duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-coolblue/10 flex items-center justify-center text-coolblue text-2xl mb-6 group-hover:bg-coolblue group-hover:text-white transition">
+                        <i class="fa-solid fa-medal"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-navy mb-3">Professional Workmanship</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Careful attention to every detail on every heating and cooling job we perform.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:border-coolblue/40 shadow-sm hover:shadow-xl transition duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-coolblue/10 flex items-center justify-center text-coolblue text-2xl mb-6 group-hover:bg-coolblue group-hover:text-white transition">
+                        <i class="fa-solid fa-temperature-arrow-up"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-navy mb-3">Year-Round Solutions</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Dependable cooling in summer and reliable heating in winter for total peace of mind.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:border-coolblue/40 shadow-sm hover:shadow-xl transition duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-coolblue/10 flex items-center justify-center text-coolblue text-2xl mb-6 group-hover:bg-coolblue group-hover:text-white transition">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-navy mb-3">Local Service</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Proudly serving Hidalgo and surrounding areas with prompt, friendly local expertise.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="py-24 bg-slate-100/70">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="bg-coolblue/10 text-coolblue px-3.5 py-1.5 rounded-full font-semibold text-xs tracking-wider uppercase">
+                    <i class="fa-solid fa-star"></i> Testimonials
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy">Customer Comfort Comes First</h2>
+                <p class="text-slate-600 text-base">Sample testimonials reflecting our dedication to top-quality service. Genuine customer reviews are collected prior to final publication.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-md border border-slate-100 flex flex-col justify-between space-y-6">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 italic text-sm leading-relaxed">
+                            "Our AC stopped cooling on one of the hottest afternoons in Hidalgo. A/C Heating & Cooling Tech LLC responded quickly, diagnosed the issue, and had us up and running in no time. Highly professional!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 pt-4 border-t border-slate-100">
+                        <div class="w-12 h-12 rounded-full bg-coolblue/10 text-coolblue font-bold flex items-center justify-center text-lg">
+                            JR
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-navy text-sm">Javier Rodriguez</h4>
+                            <span class="text-xs text-slate-400">Homeowner in Hidalgo, TX</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-md border border-slate-100 flex flex-col justify-between space-y-6">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 italic text-sm leading-relaxed">
+                            "Extremely knowledgeable and courteous technicians. They performed our annual HVAC inspection and tune-up with great care. Our system runs quieter and more efficiently now."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 pt-4 border-t border-slate-100">
+                        <div class="w-12 h-12 rounded-full bg-coolblue/10 text-coolblue font-bold flex items-center justify-center text-lg">
+                            MC
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-navy text-sm">Maria Cavazos</h4>
+                            <span class="text-xs text-slate-400">Local Business Owner</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-white p-8 rounded-3xl shadow-md border border-slate-100 flex flex-col justify-between space-y-6">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 italic text-sm leading-relaxed">
+                            "Honest pricing and clear communication from start to finish. If you need reliable heating and cooling maintenance in the Hidalgo area, this is the team to call!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 pt-4 border-t border-slate-100">
+                        <div class="w-12 h-12 rounded-full bg-coolblue/10 text-coolblue font-bold flex items-center justify-center text-lg">
+                            DG
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-navy text-sm">David Garza</h4>
+                            <span class="text-xs text-slate-400">Resident in Hidalgo, TX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner-bg py-20 px-4 text-white text-center relative overflow-hidden">
+        <div class="max-w-4xl mx-auto space-y-6 relative z-10">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">Need Heating or AC Service?</h2>
+            <p class="text-slate-200 text-lg max-w-2xl mx-auto font-normal">
+                Don't let heating or cooling problems interrupt your comfort. Contact our team today to discuss your HVAC service needs or schedule an appointment.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                <a href="tel:9565377825" class="w-full sm:w-auto bg-white text-navy hover:bg-slate-100 font-bold px-8 py-4 rounded-xl shadow-xl transition transform hover:-translate-y-1 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-phone text-coolblue"></i> Call Now: (956) 537-7825
+                </a>
+                <a href="#booking" class="w-full sm:w-auto bg-accent hover:bg-accent-hover text-white font-bold px-8 py-4 rounded-xl shadow-xl transition transform hover:-translate-y-1">
+                    Request a Free Quote
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <!-- Booking Form Column -->
+                <div class="lg:col-span-7 bg-slate-50 p-8 sm:p-10 rounded-3xl border border-slate-100 shadow-xl">
+                    <div class="space-y-3 mb-8">
+                        <span class="bg-coolblue/10 text-coolblue px-3.5 py-1.5 rounded-full font-semibold text-xs tracking-wider uppercase">
+                            <i class="fa-solid fa-calendar-days"></i> Online Booking
+                        </span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-navy">Request HVAC Service</h2>
+                        <p class="text-slate-600 text-sm">Fill out the form below to request an appointment. Our team will contact you promptly to confirm.</p>
+                    </div>
+
+                    <!-- Booking Form -->
+                    <form id="service-form" class="space-y-5" onsubmit="handleFormSubmit(event)">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label for="fullname" class="block text-xs font-semibold text-slate-600 uppercase mb-2">Full Name *</label>
+                                <input type="text" id="fullname" required class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-slate-800 focus:outline-none focus:border-coolblue transition" placeholder="John Doe">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-xs font-semibold text-slate-600 uppercase mb-2">Phone Number *</label>
+                                <input type="tel" id="phone" required class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-slate-800 focus:outline-none focus:border-coolblue transition" placeholder="(956) 000-0000">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label for="email" class="block text-xs font-semibold text-slate-600 uppercase mb-2">Email Address *</label>
+                                <input type="email" id="email" required class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-slate-800 focus:outline-none focus:border-coolblue transition" placeholder="john@example.com">
+                            </div>
+                            <div>
+                                <label for="service" class="block text-xs font-semibold text-slate-600 uppercase mb-2">Select Service *</label>
+                                <select id="service" required class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-slate-800 focus:outline-none focus:border-coolblue transition">
+                                    <option value="" disabled selected>Select HVAC Service</option>
+                                    <option value="AC Repair">AC Repair</option>
+                                    <option value="AC Installation">AC Installation</option>
+                                    <option value="AC Maintenance">AC Maintenance</option>
+                                    <option value="Heating Repair">Heating Repair</option>
+                                    <option value="Heating Installation">Heating Installation</option>
+                                    <option value="HVAC System Inspections">HVAC System Inspections</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label for="appdate" class="block text-xs font-semibold text-slate-600 uppercase mb-2">Preferred Appointment Date *</label>
+                                <input type="date" id="appdate" required class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-slate-800 focus:outline-none focus:border-coolblue transition">
+                            </div>
+                            <div>
+                                <label for="address" class="block text-xs font-semibold text-slate-600 uppercase mb-2">Service Address *</label>
+                                <input type="text" id="address" required class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-slate-800 focus:outline-none focus:border-coolblue transition" placeholder="Street, City, TX">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-xs font-semibold text-slate-600 uppercase mb-2">Additional Details / Message</label>
+                            <textarea id="message" rows="3" class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-slate-800 focus:outline-none focus:border-coolblue transition" placeholder="Describe your HVAC issue or request..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-accent hover:bg-accent-hover text-white font-bold py-4 rounded-xl shadow-lg shadow-accent/25 transition">
+                            Submit Service Request
+                        </button>
+                    </form>
+
+                    <!-- Success Confirmation Modal/Box -->
+                    <div id="form-success" class="hidden mt-6 p-4 bg-emerald-50 border border-emerald-200 text-emerald-800 rounded-2xl text-center">
+                        <i class="fa-solid fa-circle-check text-emerald-600 text-xl mb-1"></i>
+                        <h4 class="font-bold">Request Submitted Successfully!</h4>
+                        <p class="text-xs mt-1">Thank you! We have received your service request and will contact you shortly to confirm your appointment.</p>
+                    </div>
+                </div>
+
+                <!-- Contact Info & Map Column -->
+                <div id="contact" class="lg:col-span-5 flex flex-col justify-between space-y-8">
+                    <div class="space-y-6">
+                        <span class="bg-coolblue/10 text-coolblue px-3.5 py-1.5 rounded-full font-semibold text-xs tracking-wider uppercase">
+                            <i class="fa-solid fa-address-book"></i> Get In Touch
+                        </span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-navy">Let's Get Your Comfort Back</h2>
+                        <p class="text-slate-600 text-sm">Reach out to our professional team via phone, email, or visit our location in Hidalgo, TX.</p>
+
+                        <!-- Contact Details Cards -->
+                        <div class="space-y-4 pt-2">
+                            <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                                <div class="w-12 h-12 rounded-xl bg-coolblue/10 flex items-center justify-center text-coolblue shrink-0 text-lg">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-navy text-sm">Business Location</h4>
+                                    <p class="text-slate-600 text-sm mt-0.5">A/C Heating & Cooling Tech LLC<br>Hidalgo, TX 78557, United States</p>
+                                </div>
+                            </div>
+
+                            <a href="tel:9565377825" class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-100 hover:border-coolblue transition group">
+                                <div class="w-12 h-12 rounded-xl bg-coolblue/10 flex items-center justify-center text-coolblue shrink-0 text-lg group-hover:bg-coolblue group-hover:text-white transition">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-navy text-sm">Phone Number</h4>
+                                    <p class="text-slate-600 text-sm mt-0.5 font-semibold text-coolblue">(956) 537-7825</p>
+                                </div>
+                            </a>
+
+                            <a href="mailto:acbusinesstech@gmail.com" class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-100 hover:border-coolblue transition group">
+                                <div class="w-12 h-12 rounded-xl bg-coolblue/10 flex items-center justify-center text-coolblue shrink-0 text-lg group-hover:bg-coolblue group-hover:text-white transition">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-navy text-sm">Email Address</h4>
+                                    <p class="text-slate-600 text-sm mt-0.5 font-semibold text-coolblue">acbusinesstech@gmail.com</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Embedded Google Map -->
+                    <div class="rounded-3xl overflow-hidden shadow-md border border-slate-200 h-64">
+                        <iframe title="Hidalgo TX Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28628.773539827663!2d-98.2625203!3d26.1018991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x866579a32057d34b%3A0x8e8334863e46e492!2sHidalgo%2C%20TX%2078557%2C%20USA!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-navy text-slate-300 pt-16 pb-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800/80">
+                <!-- Col 1: About -->
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-coolblue flex items-center justify-center text-white text-lg">
+                            <i class="fa-solid fa-snowflake"></i>
+                        </div>
+                        <span class="text-lg font-extrabold text-white tracking-tight">A/C Heating & Cooling Tech LLC</span>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed max-w-sm">
+                        Professional heating, ventilation, and air conditioning services for residential and commercial customers in Hidalgo, Texas, and surrounding communities.
+                    </p>
+                    <div class="flex items-center gap-3 pt-2">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-slate-800 hover:bg-coolblue text-white flex items-center justify-center transition" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="mailto:acbusinesstech@gmail.com" class="w-10 h-10 rounded-xl bg-slate-800 hover:bg-coolblue text-white flex items-center justify-center transition" aria-label="Email Us">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="tel:9565377825" class="w-10 h-10 rounded-xl bg-slate-800 hover:bg-coolblue text-white flex items-center justify-center transition" aria-label="Call Us">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="space-y-4">
+                    <h4 class="text-white font-bold text-sm tracking-wider uppercase">Quick Links</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#home" class="hover:text-coolblue transition">Home</a></li>
+                        <li><a href="#about" class="hover:text-coolblue transition">About Us</a></li>
+                        <li><a href="#services" class="hover:text-coolblue transition">Our Services</a></li>
+                        <li><a href="#why-us" class="hover:text-coolblue transition">Why Choose Us</a></li>
+                        <li><a href="#reviews" class="hover:text-coolblue transition">Customer Reviews</a></li>
+                        <li><a href="#contact" class="hover:text-coolblue transition">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: HVAC Services -->
+                <div class="space-y-4">
+                    <h4 class="text-white font-bold text-sm tracking-wider uppercase">HVAC Services</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#services" class="hover:text-coolblue transition">AC Repair</a></li>
+                        <li><a href="#services" class="hover:text-coolblue transition">AC Installation</a></li>
+                        <li><a href="#services" class="hover:text-coolblue transition">AC Maintenance</a></li>
+                        <li><a href="#services" class="hover:text-coolblue transition">Heating Repair</a></li>
+                        <li><a href="#services" class="hover:text-coolblue transition">Heating Installation</a></li>
+                        <li><a href="#services" class="hover:text-coolblue transition">System Inspections</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact Info -->
+                <div class="space-y-4">
+                    <h4 class="text-white font-bold text-sm tracking-wider uppercase">Location & Contact</h4>
+                    <ul class="space-y-3 text-sm text-slate-400">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-location-dot text-coolblue mt-1"></i>
+                            <span>Hidalgo, TX 78557, United States</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-phone text-coolblue"></i>
+                            <a href="tel:9565377825" class="hover:text-white transition">(956) 537-7825</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-envelope text-coolblue"></i>
+                            <a href="mailto:acbusinesstech@gmail.com" class="hover:text-white transition">acbusinesstech@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright Bar -->
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+                <p>Copyright © 2026 A/C Heating & Cooling Tech LLC. All Rights Reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#home" class="hover:text-slate-400 transition">Privacy Policy</a>
+                    <a href="#home" class="hover:text-slate-400 transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Mobile Call Button -->
+    <div class="fixed bottom-6 right-6 z-40 sm:hidden">
+        <a href="tel:9565377825" class="w-14 h-14 bg-accent hover:bg-accent-hover text-white rounded-full shadow-2xl flex items-center justify-center text-xl animate-bounce" aria-label="Call Now">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- JavaScript for Mobile Menu & Booking Form Handling -->
+    <script>
+        // Toggle mobile menu
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Form submission demo handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const successBox = document.getElementById('form-success');
+            successBox.classList.remove('hidden');
+            document.getElementById('service-form').reset();
+            successBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            setTimeout(() => {
+                successBox.classList.add('hidden');
+            }, 8000);
+        }
+    </script>
+</body>
+</html>
